@@ -19,7 +19,7 @@ phases:
     commands:
       - rm -rf public
       - hugo
-      - aws s3 sync quickstart/public/ s3://hugodukecoursera/ --region eu-west-3 --delete
+      - aws s3 sync quickstart/public/ s3://dukehugocoursera/ --region eu-west-3 --delete
   post_build:
     commands:
       - echo Build completed on `date`
